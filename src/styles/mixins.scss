@@ -1,0 +1,10 @@
+@mixin between-children {
+  & > :not(:last-child) {
+    @content;
+  }
+}
+
+@mixin size($value) {
+  width: $value;
+  height: $value;
+}
